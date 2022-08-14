@@ -1,0 +1,57 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*ROOTS*/
+:root
+{
+    /*Background*/
+    --banner: url("/assets/galley/LOL Awaken.mp4");
+
+    /*Fonts*/
+    --body-font1: 'Poppins', sans-serif;
+    --body-font2: 'Ubuntu', sans-serif;
+
+    /*HSL*/
+    --first-color: hsl(0, 100%, 50%);
+    --black: hsl(0, 0%, 0%);
+    --lildark: hsl(0, 0%, 24%);
+    --lilwhite:hsl(0, 0%, 71%);
+    --white: hsl(0, 0%, 100%);
+
+    /*Size*/
+    --size-0-25: 0.25rem;
+}
+
+/*Main*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*scrolling*/
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*custom scroll bar*/
+::-webkit-scrollbar
+{
+    width: var(--size-0-25);
+}
+::-webkit-scrollbar-track
+{
+    background: var(--lilwhite);
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--lildark);
+    border-radius: var(--size-0-25);
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: var(--first-color);
+}
