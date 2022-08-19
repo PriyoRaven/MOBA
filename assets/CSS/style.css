@@ -4,22 +4,17 @@
 /*ROOTS*/
 :root
 {
-    /*Background*/
-    --banner: url("/assets/galley/LOL Awaken.mp4");
-
     /*Fonts*/
     --body-font1: 'Poppins', sans-serif;
     --body-font2: 'Ubuntu', sans-serif;
 
     /*HSL*/
-    --first-color: hsl(0, 100%, 50%);
+    --first-color: hsl(190, 100%, 50%);
     --black: hsl(0, 0%, 0%);
-    --lildark: hsl(0, 0%, 24%);
+    --lildark: hsl(0, 0%, 17%);
     --lilwhite:hsl(0, 0%, 71%);
     --white: hsl(0, 0%, 100%);
 
-    /*Size*/
-    --size-0-25: 0.25rem;
 }
 
 /*Main*/
@@ -31,6 +26,90 @@
     text-decoration: none;
 }
 
+/*Navbar*/
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 0 10px 0 10px;
+    font-family: var(--body-font2);
+    transition: all 0.4s ease;
+    background: var(--black);
+}
+.navbar.sticky
+{
+    padding: 1rem 0;
+    background: var(--first-color);
+}
+.navbar .max-width
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Logo*/
+.logo img
+{
+    height: 50px;
+    width: auto;
+}
+
+.logo
+{
+    padding-top: 10px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/*menus*/
+.navbar .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a
+{
+    display: block;
+    color: var(--white);
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-left: 2rem;
+    transition: all 0.2s ease;
+}
+.navbar .menu li a:hover
+{
+    color: var(--first-color);
+    background: var(--lildark);
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in; 
+}
+
+/*button*/
+.btn
+{
+    width: 120px;
+    height: 40px;
+    background: var(--lildark);
+    border: 2px solid var(--lildark);
+    margin-right: 15px;
+    font-family: var(--body-font2);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover
+{
+    background: var(--first-color);
+    border-radius: 30px;
+}
+
 /*scrolling*/
 html
 {
@@ -40,7 +119,7 @@ html
 /*custom scroll bar*/
 ::-webkit-scrollbar
 {
-    width: var(--size-0-25);
+    width: 0.25rem;
 }
 ::-webkit-scrollbar-track
 {
@@ -49,9 +128,20 @@ html
 ::-webkit-scrollbar-thumb
 {
     background: var(--lildark);
-    border-radius: var(--size-0-25);
+    border-radius: 0.25rem;
 }
 ::-webkit-scrollbar-thumb:hover
 {
     background: var(--first-color);
 }
+
+/*Main page banner*/
+.bannervid
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/*text*/
