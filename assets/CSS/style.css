@@ -10,6 +10,7 @@
 
     /*HSL*/
     --first-color: hsl(190, 100%, 50%);
+    --second-color: hsl(190, 100%, 39%);
     --black: hsl(0, 0%, 0%);
     --lildark: hsl(0, 0%, 17%);
     --lilwhite:hsl(0, 0%, 71%);
@@ -58,7 +59,7 @@
 
 .logo
 {
-    padding-top: 10px;
+    padding-top: 0px;
     height: 70px;
     cursor: pointer;
 }
@@ -75,19 +76,20 @@
     color: var(--white);
     font-size: 1.15rem;
     font-weight: 500;
-    margin-left: 2rem;
+    margin-left: 4.5rem;
     transition: all 0.2s ease;
 }
 .navbar .menu li a:hover
 {
     color: var(--first-color);
     background: var(--lildark);
-    padding: 5px 15px 5px 15px;
+    padding: 10px 15px 10px 15px;
     border-radius: 10px;
-    transition: all 0.2s ease-in; 
+    border-bottom: 3px solid var(--first-color);
+    transition: all 0.2s smooth;
 }
 
-/*button*/
+/*buttons*/
 .btn
 {
     width: 120px;
@@ -101,7 +103,7 @@
     font-size: 13px;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover
@@ -135,13 +137,68 @@ html
     background: var(--first-color);
 }
 
+/*On banner text*/
+.content
+{
+    padding-top: 15%;
+    text-align: center;
+    font-family: var(--body-font1);
+    z-index: 999;
+}
+
+.content h1
+{
+    font-size: 140px;
+    color: var(--white);
+    font-weight: 600;
+    font-family: var(--body-font2);
+    transition: all 0.4s ease;
+}
+
+.content h1:hover
+{
+    -webkit-text-stroke: 2px var(--white);
+    color: transparent;
+}
+
+/* On banner button*/
+.content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 70px;
+    margin-top: 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.content a:hover
+{
+    color: var(--second-color);
+    background: var(--first-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--first-color), 0 0 40px var(--first-color), 0 0 80px var(--first-color);
+}
+
 /*Main page banner*/
 .bannervid
 {
-    position: fixed;
+    position: absolute;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
 }
+
 /*text*/
