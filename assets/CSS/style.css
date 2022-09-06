@@ -60,7 +60,7 @@
 .logo
 {
     padding-top: 0px;
-    height: 70px;
+    height: 60px;
     cursor: pointer;
 }
 
@@ -72,21 +72,50 @@
 }
 .navbar .menu li a
 {
-    display: block;
+    display: flex;
+    align-items: center;
     color: var(--white);
     font-size: 1.15rem;
+    overflow: hidden;
     font-weight: 500;
+    padding: 15px 0px;
+    position: relative;
     margin-left: 4.5rem;
-    transition: all 0.2s ease;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar .menu li a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 3px;
+    background: var(--first-color);
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar .menu li a::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 3px;
+    background: var(--first-color);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .navbar .menu li a:hover
 {
     color: var(--first-color);
-    background: var(--lildark);
-    padding: 10px 15px 10px 15px;
-    border-radius: 10px;
-    border-bottom: 3px solid var(--first-color);
-    transition: all 0.2s smooth;
+}
+.navbar .menu li a:hover:before
+{
+    right: 0;
+}
+.navbar .menu li a:hover:after
+{
+    left: 0;
 }
 
 /*buttons*/
@@ -144,6 +173,7 @@ html
     text-align: center;
     font-family: var(--body-font1);
     z-index: 999;
+    padding-bottom: 260px;
 }
 
 .content h1
@@ -181,6 +211,7 @@ html
 
 .content a:hover
 {
+    letter-spacing: 7px;
     color: var(--second-color);
     background: var(--first-color);
     border-radius: 10px;
@@ -201,4 +232,5 @@ html
     z-index: -1;
 }
 
-/*text*/
+/* News text */
+.max-width
