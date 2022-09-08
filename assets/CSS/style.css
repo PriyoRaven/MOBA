@@ -28,22 +28,21 @@
 }
 
 /*Navbar*/
-.navbar
+nav
 {
     position: fixed;
     width: 100%;
     z-index: 999;
     padding: 0 10px 0 10px;
     font-family: var(--body-font2);
-    transition: all 0.4s ease;
+    transition: all 0.35s ease-in-out;
+}
+nav.sticky
+{
+    padding: 0 10px 0 10px;
     background: var(--black);
 }
-.navbar.sticky
-{
-    padding: 1rem 0;
-    background: var(--first-color);
-}
-.navbar .max-width
+nav .max-width
 {
     display: flex;
     align-items: center;
@@ -51,13 +50,13 @@
 }
 
 /*Logo*/
-.logo img
+nav .logo img
 {
     height: 50px;
     width: auto;
 }
 
-.logo
+nav .logo
 {
     padding-top: 0px;
     height: 60px;
@@ -101,7 +100,7 @@
     bottom: 0;
     left: 100%;
     width: 50%;
-    height: 3px;
+    height: 3.5px;
     background: var(--first-color);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -173,7 +172,6 @@ html
     text-align: center;
     font-family: var(--body-font1);
     z-index: 999;
-    padding-bottom: 260px;
 }
 
 .content h1
@@ -219,6 +217,10 @@ html
 }
 
 /*Main page banner*/
+.showpg .max-width
+{
+    width: 100%;
+}
 .bannervid
 {
     position: absolute;
@@ -232,5 +234,30 @@ html
     z-index: -1;
 }
 
-/* News text */
-.max-width
+/* Others text */
+.others .max-width
+{
+    width: 100%;
+    margin-top: 20%;
+}
+.others .title
+{
+    font-family: var(--body-font2);
+    font-size: 2.35rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: italic;
+    float: left;
+    padding-left: 10%;
+}
+.others .content-wrapper .others-page
+{
+    font-family: var(--body-font1);
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-style: italic;
+    color: var(--first-color);
+    font-weight: 600;
+    float: right;
+    padding-right: 10%;
+}
