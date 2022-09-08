@@ -124,6 +124,7 @@ nav .logo
     height: 40px;
     background: var(--lildark);
     border: 2px solid var(--lildark);
+    border-color: transparent;
     margin-right: 15px;
     font-family: var(--body-font2);
     font-weight: 600;
@@ -138,6 +139,7 @@ nav .logo
 {
     background: var(--first-color);
     border-radius: 30px;
+    border-color: transparent;
 }
 
 /*scrolling*/
