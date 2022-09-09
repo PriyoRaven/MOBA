@@ -11,6 +11,7 @@
     /*HSL*/
     --first-color: hsl(190, 100%, 50%);
     --second-color: hsl(190, 100%, 39%);
+    --light-first-color: hsl(190, 100%, 90%);
     --black: hsl(0, 0%, 0%);
     --lildark: hsl(0, 0%, 17%);
     --lilwhite:hsl(0, 0%, 71%);
@@ -41,6 +42,8 @@ nav.sticky
 {
     padding: 0 10px 0 10px;
     background: var(--black);
+    opacity: 80%;
+    box-shadow: 0 0 10px var(--black), 0 0 40px var(--black), 0 0 80px var(--black);
 }
 nav .max-width
 {
@@ -262,4 +265,32 @@ html
     font-weight: 600;
     float: right;
     padding-right: 10%;
+}
+
+/* SwiperCSS */
+.swiper
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide
+{
+    background-position: center;
+    background-size: cover;
+    width: 415px;
+    height: 300px;
+    border-radius: 1%;
+}
+
+/* Swiper cards */
+.swiper img
+{
+    display: flex;
+    margin-left: 120px;
+    position: relative;
+    margin-top: 10px;
+    width: 160px;
+    height: 110px;
+    border-radius: 50% 0%;
 }
