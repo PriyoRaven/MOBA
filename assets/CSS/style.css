@@ -42,7 +42,7 @@ nav.sticky
 {
     padding: 0 10px 0 10px;
     background: var(--black);
-    opacity: 80%;
+    opacity: 85%;
     box-shadow: 0 0 10px var(--black), 0 0 40px var(--black), 0 0 80px var(--black);
 }
 nav .max-width
