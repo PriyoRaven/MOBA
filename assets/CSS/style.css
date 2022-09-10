@@ -10,7 +10,7 @@
 
     /*HSL*/
     --first-color: hsl(190, 100%, 50%);
-    --second-color: hsl(190, 100%, 39%);
+    --second-color: hsl(43, 100%, 50%);
     --light-first-color: hsl(190, 100%, 90%);
     --black: hsl(0, 0%, 0%);
     --lildark: hsl(0, 0%, 17%);
@@ -155,6 +155,7 @@ html
 ::-webkit-scrollbar
 {
     width: 0.25rem;
+    height: 0rem;
 }
 ::-webkit-scrollbar-track
 {
@@ -215,7 +216,7 @@ html
 .content a:hover
 {
     letter-spacing: 7px;
-    color: var(--second-color);
+    color: var(--white);
     background: var(--first-color);
     border-radius: 10px;
     box-shadow: 0 0 10px var(--first-color), 0 0 40px var(--first-color), 0 0 80px var(--first-color);
@@ -236,7 +237,45 @@ html
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    bottom: 0%;
     z-index: -1;
+    border-bottom-width: 0.3rem;
+    border-bottom-style: solid;
+    border-bottom-color: var(--second-color);
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 5rem),90rem 100%,0 100%);
+}
+
+/* that golden line */
+.showpg .corner
+{
+    border-right: 8px solid var(--second-color);
+    right: 2.5rem;
+    transform: skew(-49.15deg);
+    bottom: 0;
+    height: 5rem;
+    position: absolute;
+    width: 5rem;
+    z-index: 1;
+    box-sizing: border-box;
+    position: absolute;
+}
+.showpg .end
+{
+    background: var(--second-color);
+    height: 0.6rem;
+    width: 21.5rem;
+    bottom: -0.3rem;
+    left: 0;
+    position: absolute;
+}
+.showpg .end::after
+{
+    border-right: 0.6rem solid transparent;
+    right: -0.6rem;
+    border-top: 0.6rem solid var(--second-color);
+    content: "";
+    display: block;
+    position: absolute;
 }
 
 /* Others text */
@@ -283,8 +322,8 @@ html
 {
     background-position: center;
     background-size: cover;
-    width: 415px;
-    height: 300px;
+    width: 315px;
+    height: 400px;
     box-shadow: 0 15px 50px rgba(0,0,0,0.2);
     background: var(--white);
     filter: blur(4px);
@@ -303,17 +342,28 @@ html
 .swiper .content
 {
     text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 10px;
     text-decoration: none;
     font-weight: 700;
 }
 .swiper .content h3
 {
     color: var(--black);
+    font-size: 20px;
+    font-family: var(--body-font1);
+}
+.swiper .uil
+{
+    color: var(--black);
+    position: relative;
+    
 }
 .swiper .content p
 {
+    padding-bottom: 10px;
     color: var(--first-color);
+    font-size: 18px;
+    font-family: var(--body-font2);
 }
 .swiper .content a
 {
@@ -333,27 +383,28 @@ html
     font-size: 15px;
 }
 
-/* Swiper cards */
-.swiper .lol img
+/* Swiper odd & even cards */
+.swiper .detailodd img
 {
     display: flex;
     margin-left: 120px;
-    overflow: hidden;
     position: relative;
-    margin-top: 15px;
+    margin: 30px 60px 15px 60px;
     width: 200px;
     height: 100px;
     border-radius: 40% 0%;
-    box-shadow: 0 0 5px var(--lildark), 0 0 5px var(--lildark), 0 0 5px var(--lildark);
+    box-shadow: 0 5px 50px var(--lildark);
 }
-.swiper .lolwr img
+.swiper .detaileven img
 {
     display: flex;
     margin-left: 120px;
     position: relative;
-    margin-top: 15px;
+    margin: 30px 60px 15px 60px;
     width: 200px;
     height: 100px;
     border-radius: 0% 40%;
-    box-shadow: 0 0 5px var(--lildark), 0 0 5px var(--lildark), 0 0 10px var(--lildark);
+    box-shadow: 0 5px 50px var(--lildark);
 }
+
+/* Swiper each cards (if needed) */
