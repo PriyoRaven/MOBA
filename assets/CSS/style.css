@@ -394,6 +394,7 @@ html
     height: 100px;
     border-radius: 40% 0%;
     box-shadow: 0 5px 50px var(--lildark);
+    border: 2px solid var(--second-color);
 }
 .swiper .detaileven img
 {
@@ -405,6 +406,7 @@ html
     height: 100px;
     border-radius: 0% 40%;
     box-shadow: 0 5px 50px var(--lildark);
+    border: 2px solid var(--second-color);
 }
 
 /* Swiper each cards (if needed) */
