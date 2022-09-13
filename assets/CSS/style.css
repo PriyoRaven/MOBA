@@ -42,7 +42,7 @@ nav.sticky
 {
     padding: 0 10px 0 10px;
     background: var(--black);
-    opacity: 85%;
+    opacity: 90%;
     box-shadow: 0 0 10px var(--black), 0 0 40px var(--black), 0 0 80px var(--black);
 }
 nav .max-width
@@ -278,11 +278,81 @@ html
     position: absolute;
 }
 
+/* What is MOBA page */
+.wimp .max-width
+{
+    width: 100%;
+    margin-top: 23%;
+}
+.wimp
+{
+    background: transparent;
+}
+.wimp img {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.wimp .mcontainer .mcard
+{
+    position: relative;
+    width: 96%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px var(--lilwhite);
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+.wimp .what
+{
+    color: var(--first-color);
+    font-family: var(--body-font2);
+    font-size: 2.35rem;
+    position: relative;
+    padding-left: 35%;
+    font-weight: 800;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.wimp .what::after
+{
+    content: "Multiplayer Online Battle Arena";
+    font-family: var(--body-font1);
+    font-style: 600;
+    font-size: 20px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding-top: 35px;
+    transform: translateX(-425px);
+    color: var(--second-color);
+}
+.wimp .ans
+{
+    font-family: var(--body-font1);
+    color: var(--lildark);
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding-top: 45px;
+}
+
 /* Others text */
 .others .max-width
 {
     width: 100%;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 .others .title
 {
