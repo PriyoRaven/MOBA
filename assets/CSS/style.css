@@ -291,9 +291,9 @@ html
 .wimp img {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -5%;
     z-index: -2;
-    width: 100%;
+    width: 110%;
     height: 100%;
     object-fit:cover;
 }
