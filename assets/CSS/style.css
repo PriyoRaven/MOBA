@@ -374,10 +374,10 @@ html
     font-weight: 600;
     float: right;
     padding-right: 10%;
+    transition:all 0.2s ease;
 }
 .others .content-wrapper .others-page:hover
 {
-    transition:all 0.2s ease-out;
     letter-spacing: 1.2px;
 }
 
