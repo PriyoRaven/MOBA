@@ -291,7 +291,7 @@ html
 .wimp img {
     position: absolute;
     top: 100%;
-    left: -5%;
+    left: -6%;
     z-index: -2;
     width: 110%;
     height: 100%;
@@ -346,6 +346,17 @@ html
     font-size: 1.15rem;
     font-weight: 500;
     padding-top: 45px;
+    padding-left: 20px;
+}
+.wimp .diff
+{
+    font-family: var(--body-font1);
+    color: var(--lildark);
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding-top: 15px;
 }
 
 /* Others text */
