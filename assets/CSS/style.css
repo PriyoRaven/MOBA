@@ -55,7 +55,7 @@ nav .max-width
 /*Logo*/
 nav .logo img
 {
-    height: 50px;
+    height: 0px;
     width: auto;
 }
 
@@ -405,9 +405,10 @@ html
     background-size: cover;
     width: 315px;
     height: 400px;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 60px rgba(0,0,0,0.2);
     background: var(--white);
     filter: blur(4px);
+    margin-bottom: 50px;
 }
 .swiper-slide-active
 {
@@ -489,3 +490,6 @@ html
     box-shadow: 0 5px 50px var(--lildark);
     border: 2px solid var(--second-color);
 }
+
+/* Timeline */
+
