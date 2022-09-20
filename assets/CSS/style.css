@@ -13,7 +13,7 @@
     --second-color: hsl(43, 100%, 50%);
     --light-first-color: hsl(190, 100%, 90%);
     --black: hsl(0, 0%, 0%);
-    --lildark: hsl(0, 0%, 17%);
+    --lildark: hsl(0, 1%, 22%);
     --lilwhite:hsl(0, 0%, 71%);
     --white: hsl(0, 0%, 100%);
 
@@ -131,7 +131,7 @@ nav .logo
     margin-right: 15px;
     font-family: var(--body-font2);
     font-weight: 600;
-    color: var(--white);
+    color: var(--second-color);
     font-size: 13px;
     border-radius: 10px;
     cursor: pointer;
@@ -142,7 +142,7 @@ nav .logo
 {
     background: var(--first-color);
     border-radius: 30px;
-    border-color: transparent;
+    color: var(--white);
 }
 
 /*scrolling*/
@@ -492,4 +492,150 @@ html
 }
 
 /* Timeline */
-
+.timeline
+{
+    margin: 150px auto;
+    width: 80vw;
+}
+input
+{
+    display: none;
+    position: absolute;
+}
+.head
+{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 60px;
+    animation: trans 0.7s linear forwards;
+}
+ul.tnav
+{
+    padding-top: 15px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+}
+ul.tnav li
+{
+    list-style: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: var(--lilwhite);
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    font-style: 700;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+    height: 60px;
+    position: relative;
+}
+ul.tnav li::before
+{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--lilwhite);
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    transition: all 0.3s ease;
+}
+ul.tnav li:hover::before
+{
+    border: 2px solid var(--white);
+    background: var(--lildark);
+}
+ul.tnav li .inner
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: bolder;
+}
+ul.tnav li.active,
+ul.tnav li:hover
+{
+    color: var(--lildark);
+}
+ul.tnav li::after
+{
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: var(--lildark);
+    border-radius: 50%;
+    margin: auto;
+    border: 7px solid var(--white);
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px 0px var(--black);
+}
+ul.tnav li:hover::after,
+ul.tnav li.active::after
+{
+    background: blue;
+}
+/* the line */
+.line
+{
+    width: 76%;
+    margin: auto;
+    background: var(--lilwhite);
+    height: 7px;
+    position: absolute;
+    left: 11.5%;
+    top: 52px;
+    z-index: 1;
+    border-radius: 50px;
+}
+.line span
+{
+    content: '';
+    width: 2%;
+    height: 100%;
+    background-image: linear-gradient(to right, #a29bfe 0%, #ff7675 100%);
+    position: absolute;
+    z-index: 2;
+    border-radius: 50px;
+    transition: all 0.8s ease;
+}
+/* content in it */
+.tcontent
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: anim 0.7s linear forwards;
+    flex-direction: column;
+}
+.tcontent section
+{
+    width: 70%;
+    margin: auto;
+    background-image: linear-gradient(to right, #a29bfe 0%, #ff7675 100%);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--white);
+}
+.tcontent section span
+{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.tcontent section p
+{
+    padding: 30px 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 13px;
+}
