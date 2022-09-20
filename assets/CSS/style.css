@@ -613,7 +613,6 @@ ul.tnav li.active::after
     display: flex;
     justify-content: center;
     animation: anim 0.7s linear forwards;
-    flex-direction: column;
 }
 .tcontent section
 {
@@ -638,4 +637,72 @@ ul.tnav li.active::after
     text-align: center;
     font-weight: bolder;
     font-size: 13px;
+}
+/* timeline progress bar */
+.profile:checked ~ .head .tnav li.st1::before,
+
+.settings:checked ~ .head .tnav li.st1::before,
+.settings:checked ~ .head .tnav li.st2::before,
+
+.posts:checked ~ .head .tnav li.st1::before,
+.posts:checked ~ .head .tnav li.st2::before,
+.posts:checked ~ .head .tnav li.st3::before,
+
+.books:checked ~ .head .tnav li.st1::before,
+.books:checked ~ .head .tnav li.st2::before,
+.books:checked ~ .head .tnav li.st3::before,
+.books:checked ~ .head .tnav li.st4::before
+{
+    border: 2px solid var(--white);
+    background: var(--lilwhite);
+    transition: all 0.3s ease;
+}
+
+.settings:checked ~ .head .line span
+{
+    width: 35%;
+}
+.posts:checked ~ .head .line span
+{
+    width: 68%;
+}
+.books:checked ~ .head .line span
+{
+    width: 100%;
+}
+
+.profile-section,
+.account-section,
+.posts-section,
+.books-section
+{
+    transform: scale(0);
+    transform-origin: center bottom;
+    transition: all 0.7s ease;
+    position: absolute;
+    top: 0;
+}
+.profile:checked~.tcontent .profile-section,
+.settings:checked~.tcontent .account-section,
+.posts:checked~.tcontent .posts-section,
+.books:checked~.tcontent .books-section
+{
+    display: block;
+    transform: scale(1);
+    transform-origin: bottom;
+}
+@keyframes anim
+{
+    0% {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
 }
