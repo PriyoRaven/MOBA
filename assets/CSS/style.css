@@ -16,16 +16,6 @@
     --lildark: hsl(0, 1%, 22%);
     --lilwhite:hsl(0, 0%, 71%);
     --white: hsl(0, 0%, 100%);
-
-    /* timeline root */
-    --numDots: 20;
-    --parentWidthBase: 0.8;
-    --parentWidth: $parentWidthBase * 100vw;
-    --parentMaxWidth: 1000px;
-    --dotWidth: 25px;
-    --active: #2C3E50;
-    --inactive: #AEB6BF;
-
 }
 
 /*Main*/
@@ -543,7 +533,7 @@ html
 }
 
 #progress-bar-container li:before {
-	content: '';
+	content:"";
 	display:block;
 	margin:auto;
 	width:30px;
