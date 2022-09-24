@@ -1,6 +1,7 @@
 $(".step").click( function() {
 	$(this).addClass("active").prevAll().addClass("active");
 	$(this).nextAll().removeClass("active");
+	$(this).prevAll().removeClass("active");
 });
 
 $(".step01").click( function() {
