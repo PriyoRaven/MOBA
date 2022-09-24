@@ -529,7 +529,7 @@ html
 	padding:0;
 	margin:0;
 	padding-top:15px;
-	z-index:999;
+	z-index:2;
 	position:absolute;
 	width:100%;
     font-family: var(--body-font1);
@@ -559,13 +559,9 @@ html
     box-shadow:  0 0 1px var(--white), 0 0 2px var(--first-color), 0 0 10px var(--first-color);
 }
 
-#progress-bar-container li.active, #progress-bar-container li:hover {
-    color: var(--lildark);
-    letter-spacing: 1px;
-}
 
 #progress-bar-container li {
-	list-style:none;
+    list-style:none;
 	float:left;
 	width:16.6%;
 	text-align:center;
@@ -581,10 +577,15 @@ html
 }
 
 #progress-bar-container li .step-inner {
-	position:absolute;
+    position:absolute;
 	width:100%;
 	bottom:0;
     font-size: 14px;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+    color: var(--lildark);
+    letter-spacing: 1px;
 }
 
 #progress-bar-container li:after {
@@ -599,6 +600,15 @@ html
 	margin-top:40px;
 	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
 	transition:all ease 0.2s;
+    z-index: 9;
+}
+
+#progress-bar-container li:hover:after {
+	background:transparent;
+}
+
+#progress-bar-container li.active:after {
+	background:transparent;
 }
 
 #progress-bar-container #line {
@@ -623,21 +633,24 @@ html
 }
 
 #progress-content-section .section-content {
-	padding:30px 40px;
+	padding:20px 40px;
 	text-align:center;
 }
 
-#progress-content-section .section-content h2 {
-	font-size:20px;
+#progress-content-section .section-content .champ-content {
+	font-size:25px;
 	text-transform:uppercase;
-	color: var(--lildark);
+    font-family: var(--body-font1);
+	color: var(--first-color);
+    padding-bottom: 20px;
 	letter-spacing:1px;
 }
 
-#progress-content-section .section-content p {
-	font-size:16px;
+#progress-content-section .section-content .champp {
+	font-size:18.5px;
 	line-height:1.8em;
-	color:#777;
+    font-family: var(--body-font1);
+	color:var(--black);
 }
 
 #progress-content-section .section-content {
