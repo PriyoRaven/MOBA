@@ -495,8 +495,22 @@ html
 .timeline
 {
     max-width: 1800px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.timeline .timeline-background
+{
+    margin-top: 50px;
+    left: 12.5%;
+    z-index: -999;
+    font-weight: 700;
+    font-family: var(--body-font1);
+    padding-top: 0px;
+    position: absolute;
+    font-size: 350px;
+    -webkit-text-stroke: 2px var(--second-color);
+    color: transparent;
+    font-style: italic;
 }
 .timeline .champ
 {
@@ -626,7 +640,8 @@ html
 #progress-content-section {
 	width:90%;
 	margin: auto;
-	background: var(--white);
+	background: transparent;
+    backdrop-filter: blur(5px);
     border: 1px solid var(--white);
     box-shadow:20px 20px 50px var(--lilwhite);
 	border-radius: 20px;
