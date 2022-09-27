@@ -332,13 +332,20 @@ html
     margin-top: 30px;
     margin-bottom: 30px;
     height: 400px;
+    color: transparent;
     margin: 30px;
-    box-shadow: 20px 20px 50px var(--lilwhite);
+    box-shadow: 10px 10px 30px var(--lilwhite);
     border-radius: 25px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     backdrop-filter: blur(5px);
+    transition: all 0.5s ease;
+}
+.wimp .mcontainer .mcard:hover
+{
+    box-shadow: 20px 20px 50px var(--lilwhite);
+    backdrop-filter: blur(10px);
 }
 .wimp .what
 {
@@ -348,7 +355,7 @@ html
     position: relative;
     padding-left: 35%;
     font-weight: 800;
-    padding-top: 10px;
+    padding-top: 30px;
     text-transform: uppercase;
     font-style: italic;
 }
@@ -373,8 +380,9 @@ html
     text-align: center;
     font-size: 1.15rem;
     font-weight: 500;
-    padding-top: 45px;
-    padding-left: 20px;
+    padding-top: 55px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .wimp .diff
 {
@@ -385,6 +393,8 @@ html
     font-size: 1.15rem;
     font-weight: 500;
     padding-top: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 /* Others text */
@@ -437,6 +447,7 @@ html
     background: var(--white);
     filter: blur(4px);
     margin-bottom: 50px;
+    transition: all 0.5s ease;
 }
 .swiper-slide-active
 {
@@ -670,10 +681,15 @@ html
 	width:90%;
 	margin: auto;
 	background: transparent;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     border: 1px solid var(--white);
-    box-shadow:20px 20px 50px var(--lilwhite);
+    box-shadow:10px 10px 30px var(--lilwhite);
 	border-radius: 20px;
+    transition: all 0.5s ease;
+}
+#progress-content-section:hover {
+    backdrop-filter: blur(10px);
+    box-shadow:20px 20px 50px var(--lilwhite);
 }
 
 #progress-content-section .section-content {
@@ -753,5 +769,34 @@ footer a
     padding-top: 40px;
     cursor: pointer;
     color: var(--white);
-    margin-left: calc(100% - 1250px);
+    margin-left: calc(100% - 1270px);
+    transition: all 0.5s ease;
+}
+footer .insta:hover
+{
+    color: rgb(231, 79, 105);
+    
+}
+footer .fb:hover
+{
+    color: rgb(4, 110, 229);
+}
+footer .yt:hover
+{
+    color: rgb(253, 0, 0);
+}
+footer .twit:hover
+{
+    color: rgb(26, 140, 216);
+}
+/* footer icon */
+footer .ftr-moba-logo
+{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: -100px;
+    filter: contrast(10%);
 }
