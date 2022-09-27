@@ -26,6 +26,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
+    position: auto;
 }
 
 /* Scroll up button */
@@ -524,7 +525,7 @@ html
 {
     max-width: 1800px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 .timeline .timeline-background
 {
@@ -719,4 +720,38 @@ html
 		transform:translateY(0px);
 		opacity:1;
 	}
+}
+
+/* Footer */
+footer
+{
+    margin-top: auto;
+    margin-bottom: 0px;
+    max-width: 100%;
+    position: relative;
+}
+footer .ftr-img
+{
+    position: relative;
+    max-width: 100%;
+}
+/* icons */
+footer .ftr-icons
+{
+    z-index: 9999;
+    width: 100%;
+    padding: 10px;
+}
+footer a
+{
+    text-align: center;
+    display: inline-block;
+    left: 50%;
+    z-index: 999999;
+    text-decoration: none;
+    font-size: 4em;
+    padding-top: 40px;
+    cursor: pointer;
+    color: var(--white);
+    margin-left: calc(100% - 1250px);
 }
