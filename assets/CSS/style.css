@@ -800,3 +800,16 @@ footer .ftr-moba-logo
     margin-left: -100px;
     filter: contrast(10%);
 }
+/* footer text */
+footer p
+{
+    color: grey;
+    font-family: var(--body-font1);
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    margin: 0 335px 10px 335px;
+}
