@@ -232,6 +232,9 @@ html
     }
 }
 
+/* Signup/signin */
+
+
 /* On banner button*/
 .content a
 {
@@ -823,14 +826,16 @@ footer p
 }
 
 
-.reveal{
+.reveal
+{
     position: relative;
     transform: translateY(50px);
     opacity: 0;
-    transition: 1s all linear;
-  }
+    transition: 0.3s all linear;
+}
   
-  .reveal.active{
+.reveal.active
+{
     transform: translateY(0);
     opacity: 1;
-  }
+}
