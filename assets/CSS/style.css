@@ -691,6 +691,7 @@ html
 
 #progress-content-section {
 	width:90%;
+    padding-top: -20px;
 	margin: auto;
 	background: transparent;
     backdrop-filter: blur(5px);
