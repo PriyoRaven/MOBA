@@ -279,31 +279,17 @@ html
     min-height: 100%;
     bottom: 0%;
     z-index: -1;
-    border-bottom-width: 0.3rem;
+    border-bottom-width: 0.5rem;
     border-bottom-style: solid;
     border-bottom-color: var(--second-color);
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 5rem),90rem 100%,0 100%);
 }
 
 /* that golden line */
-.showpg .corner
-{
-    border-right: 8px solid var(--second-color);
-    right: 2.5rem;
-    transform: skew(-49.15deg);
-    bottom: 0;
-    height: 5rem;
-    position: absolute;
-    width: 5rem;
-    z-index: 1;
-    box-sizing: border-box;
-    position: absolute;
-}
 .showpg .end
 {
     background: var(--second-color);
     height: 0.6rem;
-    width: 21.5rem;
+    width: 25.5rem;
     bottom: -0.3rem;
     left: 0;
     position: absolute;
