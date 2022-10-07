@@ -78,6 +78,16 @@ nav .max-width
     align-items: center;
     justify-content: space-between;
 }
+/* blur others */
+ul:hover li
+{
+    transition: all 0.3s ease-in;
+    scale: 85%;
+}
+ul li:hover
+{
+    scale: 100%;
+}
 
 /*Logo*/
 nav .logo img
