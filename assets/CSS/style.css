@@ -225,14 +225,16 @@ html
 }
 
 /* Signup/signin */
-.body:hover .container
+.theblrbg
 {
-    transition: all 0.3s ease-in;
-    filter: blur(5px);
-}
-.body .container:hover
-{
-    filter: none;
+    background: black;
+    opacity: 70%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    position: fixed;
+    z-index: 10;
 }
 .container
 {
@@ -240,7 +242,7 @@ html
     width: 800px;
     height: 500px;
     margin: 100px 0 100px 300px;
-    z-index: 10;
+    z-index: 11;
 }
 .blueBg
 {
@@ -376,10 +378,12 @@ html
     border-radius: 0 20px;
     padding: 10px;
     outline: none;
+    color: var(--first-color);
     font-size: 16px;
     font-family: var(--body-font2);
-    border: 1px solid grey;
+    border: 1px solid var(--second-color);
 }
+
 .formBx .form form input[type="submit"]
 {
     background: var(--first-color);
@@ -392,6 +396,12 @@ html
     cursor: pointer;
     box-shadow: 0 5px 45px rgba(0,0,0,.35);
     transition: all 0.2s ease;
+}
+.formBx .form form input[type="submit"]:hover
+{
+    border: 1px solid var(--first-color);
+    background: var(--white);
+    color: var(--first-color);
 }
 .formBx .form form input[type="submit"]:active
 {
