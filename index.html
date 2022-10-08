@@ -39,13 +39,54 @@
                 <li><a href="#" class="menu">CHAMPIONS</a></li>
                 <li><a href="#" class="menu">SUPPORT</a></li>
             </ul>
-            <button class="btn">SIGN UP / LOGIN</button>
+            
+            <!-- THE BUTTON -->
+            <input type="button" class="s3-btn" name="open" onclick="popupOpen();" value="SignIn/SignUp">
         </div>
     </nav>
+    <div class="popup" id="popup" style="display: none;">
+        <div class="popup-inner">
+            <!-- THE CONTAINER -->
+            <div class="container">
+                <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
+                <!-- BACKGROUND / THE UNSELECTED PLACE -->
+                <div class="blueBg">
+                    <div class="box signin">
+                        <h2 class="signh2">Welcome Back!</h2>
+                        <button class="signm signinBtn">Sign in</button>
+                    </div>
+                    <div class="box signup">
+                        <h2 class="signh2">Hello there!</h2>
+                        <button class="signm signupBtn">Sign up</button>
+                    </div>
+                </div>
+                <div class="formBx">
+                    <!-- SIGNIN PLACE -->
+                    <div class="form signinForm">
+                        <form>
+                            <h3>Sign In</h3>
+                            <input type="text" required="required" placeholder="Username">
+                            <input type="password" required="required" placeholder="Password">
+                            <a href="#" class="forgot">forgot password?</a>
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                    <!-- SIGNUP PLACE -->
+                    <div class="form signupForm">
+                        <form>
+                            <h3>Sign Up</h3>
+                            <input type="text" required="required" placeholder="Username">
+                            <input type="text" required="required" placeholder="Email">
+                            <input type="password" required="required" placeholder="Password">
+                            <input type="password" required="required" placeholder="Confirm Password">
+                            <input type="submit" required="required" value="Register">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- SIGN UP OR SIGN IN OVERLAY -->
-
-    
     <!-- FRONT PAGE -->
     <section class="showpg">
         <div class="max-width">
@@ -355,6 +396,9 @@
     <script src="/assets/JS/scroll.js"></script>
     <!-- NAVBAR JS -->
     <script src="/assets/JS/navup.js"></script>
+    <!-- SIGNUP OVERLAY -->
+    <script src="/assets/JS/pop.js"></script>
+    <script src="/assets/JS/signovrly.js"></script>
     <!-- PARALLAX JS -->
     <script src="/assets/JS/parallax.js"></script>
     <!-- SWIPER JS -->
@@ -366,4 +410,3 @@
 </body>
 </html>
 <!-- End of my main page nothing to see more -->
-<!-- https://www.youtube.com/watch?v=R3V9IRghpEg&t=366s&ab_channel=OnlineTutorials -->

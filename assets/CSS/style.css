@@ -10,6 +10,7 @@
 
     /*HSL*/
     --first-color: hsl(190, 100%, 50%);
+    --first-color-grad: radial-gradient(ellipse at bottom, hsl(194, 100%, 50%) 20%, hsl(180, 1%, 71%)100%);
     --second-color: hsl(43, 100%, 50%);
     --light-first-color: hsl(190, 100%, 90%);
     --black: hsl(0, 0%, 0%);
@@ -27,6 +28,11 @@
     text-decoration: none;
     scroll-behavior: smooth;
     position: auto;
+}
+body
+{
+    display:inherit;
+    overflow-x: hidden;
 }
 
 /* Scroll up button */
@@ -78,10 +84,10 @@ nav .max-width
     align-items: center;
     justify-content: space-between;
 }
-/* blur others */
+/* scale others */
 ul:hover li
 {
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in-out;
     scale: 85%;
 }
 ul li:hover
@@ -92,12 +98,13 @@ ul li:hover
 /*Logo*/
 nav .logo img
 {
-    height: 0px;
+    height: auto;
     width: auto;
 }
 
 nav .logo
 {
+    overflow-y: hidden;
     padding-top: 0px;
     height: 60px;
     cursor: pointer;
@@ -157,31 +164,6 @@ nav .logo
     left: 0;
 }
 
-/*buttons*/
-.btn
-{
-    width: 120px;
-    height: 40px;
-    background: var(--lildark);
-    border: 2px solid var(--lildark);
-    border-color: transparent;
-    margin-right: 15px;
-    font-family: var(--body-font2);
-    font-weight: 600;
-    color: var(--second-color);
-    font-size: 13px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn:hover
-{
-    background: var(--first-color);
-    border-radius: 30px;
-    border: 2px solid var(--white);
-    color: var(--white);
-}
 
 /*scrolling*/
 html
@@ -243,7 +225,292 @@ html
 }
 
 /* Signup/signin */
+.body:hover .container
+{
+    transition: all 0.3s ease-in;
+    filter: blur(5px);
+}
+.body .container:hover
+{
+    filter: none;
+}
+.container
+{
+    position: fixed;
+    width: 800px;
+    height: 500px;
+    margin: 100px 0 100px 300px;
+    z-index: 10;
+}
+.blueBg
+{
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/gallery/kindred.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.15);
+}
+.blueBg .box
+{
+    position: relative;
+    width: 50;
+    height: 100%;
+    display: flex;
+    margin: 0 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blueBg .box .signh2
+{
+    color: white;
+    font-size: 33px;
+    font-family: var(--body-font1);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.blueBg .box .signm
+{
+    background:transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-family: var(--body-font2);
+    font-weight: 600;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+.blueBg .box .signm:hover
+{
+    letter-spacing: 2px;
+    background: var(--first-color);
+    box-shadow: 0 5px 45px rgba(0,0,0,.35);
+}
+.blueBg .box button
+{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    color: black;
+    font-family: var(--body-font1);
+    font-size: 16px;
+    font-weight: 500;
+}
+.formBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 0.5px solid var(--second-color);
+    border-radius: 20px;
+    background: white;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.formBx.active
+{
+    left: 50%;
+}
+.formBx .form
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+.formBx .signinForm
+{
+    transition-delay: 0.25s;
+}
+.formBx.active .signinForm
+{
+    left: -100%;
+    transition-delay: 0s;
+}
+.formBx .signupForm
+{
+    left: 100%;
+    transition-delay: 0s;
+}
+.formBx.active .signupForm
+{
+    left: 0;
+    transition-delay: 0.25s;
+}
+.formBx .form h3
+{
+    text-align: center;
+    font-family: var(--body-font1);
+    color: var(--second-color);
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+.formBx .form form
+{
+   width: 100%;
+   display: black;
+   margin-bottom: 20px;
+   font-weight: 500;
+   font-family: var(--body-font1);
+}
+.formBx .form form input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 0 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-family: var(--body-font2);
+    border: 1px solid grey;
+}
+.formBx .form form input[type="submit"]
+{
+    background: var(--first-color);
+    border: none;
+    color: white;
+    max-width: 100px;
+    border-radius: 20px;
+    margin: 20px 105px;
+    font-family: var(--body-font2);
+    cursor: pointer;
+    box-shadow: 0 5px 45px rgba(0,0,0,.35);
+    transition: all 0.2s ease;
+}
+.formBx .form form input[type="submit"]:active
+{
+    transform: scale(0.95);
+}
+.formBx .form form .forgot
+{
+    color: rgb(110, 110, 110);
+    margin-top: -15px;
+    margin-left: 10px;
+    text-decoration: none;
+    position: absolute;
+}
+.formBx .form form .forgot:hover
+{
+    color:#4D77FF;
+}
+.s3-btn-close
+{
+	position:absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+    height: 40px;
+	background:var(--first-color);
+	border:solid 2px var(--white);
+	color:var(--white);
+	cursor:pointer;
+	font-size: 30px;
+	border-radius: 50px;
+    transition: all 0.2s ease-in;
+	z-index: 11;
+	box-shadow:  0 14px 28px rgba(0,0,0,0.25);
+}
+.s3-btn-close:hover
+{
+	background: var(--white);
+    color: var(--second-color);
+    border:solid 2px var(--first-color);
+}
+.s3-btn
+{
+	background:var(--lildark);
+	border-radius:10px;
+    border: 1px solid black;
+	width:120px;
+	height:35px;
+	cursor:pointer;
+    position: inherit;
+	color: var(--second-color);
+	margin: 0;
+	transition: all 0.3s ease-in;
+    font-size: 15px;
+	box-shadow:  0 14px 50px rgba(0,0,0,1);
+    z-index: 5;
+  }
 
+.s3-btn:hover {
+	background: var(--first-color-rev);
+	color: white;
+	border: 2px solid var(--first-color);
+    border-radius: 30px;
+}
+.s3-btn:active
+{
+    transform: scale(0.85);
+}
+
+@media (max-width: 991px)
+{
+    .container
+    {
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    .container .blueBg
+    {
+        top: 0;
+        height: 100%;
+    }
+    .formBx
+    {
+        width: 100%;
+        height: 500px;
+        top: 0;
+        box-shadow: none;
+    }
+    .blueBg .box
+    {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        bottom: 0;
+    }
+    .box.signin
+    {
+        top: 0;
+    }
+    .formBx.active
+    {
+        left: 0;
+        top: 150px;
+    }
+}
+@media (max-width: 425px)
+{
+    .container
+    {
+        max-width: 300px;
+    }
+    .formBx .form form input[type="submit"]
+    {
+        margin-left: 40px;   
+    }
+}
 
 /* On banner button*/
 .content a
