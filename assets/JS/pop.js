@@ -2,7 +2,6 @@ function popupOpen()
 {
     document.getElementById("popup").style.display="block";
     document.getElementById("blurrybg").style.display="block";
-    
 }
 function popupClose()
 {

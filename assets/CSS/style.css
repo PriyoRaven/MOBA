@@ -241,6 +241,7 @@ html
     position: fixed;
     width: 800px;
     height: 500px;
+    transition: all 0.2s ease-in-out;
     margin: 100px 0 100px 300px;
     z-index: 11;
 }
