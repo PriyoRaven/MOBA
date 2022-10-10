@@ -35,6 +35,16 @@ body
     overflow-x: hidden;
 }
 
+/*preloader*/
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url(/assets/gallery/two-iridescent-drops.gif) no-repeat center;
+    z-index: 20;
+    overflow: hidden;
+}
+
 /* Scroll up button */
 #scroll-up {
     position: fixed;
