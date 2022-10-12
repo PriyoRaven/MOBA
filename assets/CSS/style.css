@@ -798,6 +798,7 @@ html
     color: var(--white);
     letter-spacing: none;
     font-size: 15px;
+    box-shadow: 0 0 1px var(--white), 0 0 5px var(--first-color), 0 0 15px var(--first-color);;
 }
 
 /* Swiper odd & even cards */
