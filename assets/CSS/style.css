@@ -481,6 +481,14 @@ html
     transform: scale(0.85);
 }
 
+@media (max-width: 1024px)
+{
+    .container
+    {
+        left: -130px;
+    }
+}
+
 @media (max-width: 991px)
 {
     .container
