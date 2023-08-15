@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 <!-- 
-** Thanks for checking out my readme file. If you think adding anymore to this readme will make the readme more good then please do make suggestion.
+** Thanks for checking out my readme file. If you think adding any more to this readme will make the readme more good then please do make a suggestion.
 
-** simply open an issue with the tag "enhancement" and say what i need to add or change.
+** Simply open an issue with the tag "enhancement" and say what I need to add or change.
 
 ** Don't forget to give the project a star!
 
