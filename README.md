@@ -9,7 +9,6 @@
 ** Thanks again! now make something AMAZING! :D
  -->
 [![MIT License][license-shield]][license-url]
-[![Stargazers][stars-shield]][stars-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
