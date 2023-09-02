@@ -994,8 +994,7 @@ html
     transition: all 0.5s ease;
 }
 #progress-content-section:hover {
-    backdrop-filter: blur(10px);
-    box-shadow:20px 20px 50px var(--lilwhite);
+    box-shadow:10px 20px 50px var(--lilwhite);
 }
 
 #progress-content-section .section-content {
