@@ -62,14 +62,14 @@ There are many great websites on internet but was missing this awesome MOBA webs
 
 Here I have added the glassmorphism effect, parallax effect, signup/signin overlay function, star.js function, and carousel features too. Hope this is it but if anymore feature you think will be good then please do suggest.😊
 
-Of course, none website will serve every aspects since needs may be different to others. So I may be adding more in the near future. You may also suggest changes by opening an issue.
+Of course, no website will serve every aspect since needs may be different from others. So I may be adding more in the near future. You may also suggest changes by opening an issue.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgments section. Here are a few examples.
 
 * <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
 * <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
@@ -81,7 +81,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project can be used as a template to make other projects or to understand some features of css to implement more thing to other.
+This project can be used as a template to make other projects or to understand some features of CSS to implement more things for others.
  
 This project has many more possibilities but all are not implemented here so make one and improve it more. And always you can come and play MOBA games cause they are also a good game genre.
 
